@@ -1,0 +1,5 @@
+{
+    "require": {
+        "wapmorgan/image-editor": "0.0.6"
+    }
+}
