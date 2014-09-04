@@ -34,15 +34,20 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		 $this->pageTitle = "Grupo Nós do Bem";
-		$this->render('index');
+		 $this->pageTitle = "GRUPO NÓS DO BEM";
+		  $this->layout='//layouts/column5';
+		  
+		  $model = Galeria::model()->findAll(null, 'order by (idgaleria) DESC'); 
+		$this->render('index',array(
+			'model'=>$model,
+		));
 	}
 	
 		public function actionSobre()
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		 $this->pageTitle = "Grupo Nós do Bem";
+		 $this->pageTitle = "GRUPO NÓS DO BEM";
 		  $this->layout='//layouts/column4';
 		$this->render('sobre');
 	}
@@ -66,7 +71,7 @@ class SiteController extends Controller
 	 */
 	public function actionContact()
 	{
-		 $this->pageTitle = "Grupo Nós do Bem";
+		 $this->pageTitle = "GRUPO NÓS DO BEM";
 		 $this->layout='//layouts/column4';
 		
 		$model=new ContactForm;
@@ -95,7 +100,7 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
-	  	 $this->pageTitle = "Grupo Nós do Bem";
+	  	 $this->pageTitle = "GRUPO NÓS DO BEM";
 	  $this->layout='//layouts/column4';
 	  
 		$model=new LoginForm;

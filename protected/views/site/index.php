@@ -14,4 +14,4 @@ $this->pageTitle=Yii::app()->name =  "Grupo Nós do Bem";
 	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
 </ul> -->
 
-
+?>

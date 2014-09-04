@@ -10,12 +10,12 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Grupo Nós do Bem',
+	'name'=>'GRUPO NÓS DO BEM',
 
 	// preloading 'log' component
 	//'preload'=>array('log'),
 	// preloading 'log' component
-	'preload'=>array('log', 'bootstrap'),
+	//'preload'=>array('log', 'bootstrap'),
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
@@ -75,6 +75,8 @@ return array(
 			'username' => 'root',
 			'password' => '123456',
 			'charset' => 'utf8',
+			'enableProfiling'=>true,
+       		'enableParamLogging'=>true,
 		),
 		
 		'errorHandler'=>array(
